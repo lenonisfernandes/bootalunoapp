@@ -17,8 +17,11 @@ public class AlunoService {
 	@Autowired // injetando a depencia - no construtor
 	private AlunoRepository alunoRepositorio;
 	final static Logger logger = LoggerFactory.getLogger(AlunoService.class);
-
 	
+	/*@Autowired // injetando a depencia - no construtor
+	public AlunoService(AlunoRepository alunoRepositorio) {
+		this.alunoRepositorio = alunoRepositorio;
+	}*/
 	
 	public AlunoService() {
 		logger.debug("entrou...");
